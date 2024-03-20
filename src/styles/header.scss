@@ -1,30 +1,68 @@
 @use 'variaveis';
 
 .header {
-    position: absolute;
+    position: sticky;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    background-color: variaveis.$CorDasLetras;
+    transition: background-color .5s ease;
+
+    &--is-hideen {
+        background-color: transparent;
+
+        .header {
+            &__logo, &__links__item:first-child {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        transition: opacity .5s ease;
+        color: rgb(229, 9, 20);
+        fill: currentColor;
+        display: block;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+
+    &__links {
+        display: flex;
+        &__item {
+            background: blue;
+            margin: 5px;
+            transition: opacity .5s ease;
+        }
+    }
+
+    .button {
+        height: 50px;
+    }
 }
 
-.title--header {
-    position: absolute;
-    width: 9.25rem;
-    height: 2.5rem;
-    color: rgb(229, 9, 20);
-    fill: currentColor;
-    display: block;
+
+.footer__links {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 }
 
-.header__links__item {
-    height: 50px;
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
-}
-
-
-
-.header__links__2 {
-
+.language-selector {
+    display: flex;
+    align-items: center;
+    img {
+        height: 18px;
+        width: 18px;
+    }
 }
