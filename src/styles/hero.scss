@@ -1,0 +1,67 @@
+@use 'variaveis';
+
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(/imagens-2/logo\ netflix.jpg);
+    text-align: center;
+    background-size: cover;
+    color: variaveis.$CorDasLetras;
+
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
+    .title--small {
+        font-size: 3rem;
+        font-weight: 900;
+        margin: 0;
+        font-weight: 500;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 7.5rem 0 2rem;
+    }
+
+    .title--small-2 {
+        margin: 1rem 0 0;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    .title--small-3 {
+        margin: 0;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .title--email {
+        transition-property: background-color, color;
+        transition-delay: 86400s;
+        background-image: none !important;
+        width: 25%;
+        color: inherit;
+        filter: opacity(100%);
+        padding: 1.25rem 1rem 0.25rem;
+    }
+
+    .title--button {
+        user-select: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        fill: currentColor;
+        position: relative;
+        border: 0;
+        width: auto;
+        font-size: 1.125rem;
+        font-weight: 500;
+        min-height: 3rem;
+        padding: 0.5rem 1rem;
+        background: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+    }
+
+}

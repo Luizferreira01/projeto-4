@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.title--header {
+    position: absolute;
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+
+.header__links__item {
+    height: 50px;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.header__links__2 {
+
+}
